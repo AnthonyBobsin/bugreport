@@ -5,9 +5,13 @@
 @import "config.scss";
 
 .alert-notice, .alert-alert {
-  background-color: $emerald;
+  background-color: #f7ecb5;
   text-align: center;
-  color: white;
+  color: #eea236;
+}
+
+.alert-success {
+  text-align: center;
 }
 
 .gimmeSpace {
