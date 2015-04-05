@@ -1,0 +1,55 @@
+// Place all the styles related to the bugs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "config.scss";
+
+.bugs {
+  padding: 10px 10px;
+  margin: 15px 0;
+
+  .bugButton {
+    padding-top: 35px;
+    a {
+      color: $clouds;
+      &:hover, &:focus {
+        color: #222222;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.open {
+  color: $clouds;
+  background: $alizarin;
+  border: $pomegranate;
+
+  background: -webkit-linear-gradient(top, $alizarin, $pomegranate);
+  background: -moz-linear-gradient(top, $alizarin, $pomegranate);
+  background: -o-linear-gradient(top, $alizarin, $pomegranate);
+  background: -ms-linear-gradient(top, $alizarin, $pomegranate);
+  background: linear-gradient(top, $alizarin, $pomegranate);
+
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.closed {
+  color: $clouds;
+  background: $emerald;
+  border: $greenSea;
+
+  background: -webkit-linear-gradient(top, $emerald, $greenSea);
+  background: -moz-linear-gradient(top, $emerald, $greenSea);
+  background: -o-linear-gradient(top, $emerald, $greenSea);
+  background: -ms-linear-gradient(top, $emerald, $greenSea);
+  background: linear-gradient(top, $emerald, $greenSea);
+
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

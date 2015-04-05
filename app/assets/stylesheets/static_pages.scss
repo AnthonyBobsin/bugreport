@@ -1,0 +1,118 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "config.scss";
+
+.gimmeSpace {
+  margin-top: 5vh;
+}
+
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  background-color: rgba(1, 1, 1, 0.8);
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+  color: $emerald;
+  &:hover {
+    color: $greenSea;
+  }
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: $concrete;
+  background-color: rgba(1, 1, 1, 0.8);
+}
+
+ul.dropdown-menu {
+  background-color: rgba(1, 1, 1, 0.8);
+  &:hover, &focus {
+    background-color: rgba(1, 1, 1, 0.8);
+  }
+  a {
+    color: $clouds;
+    &:hover, &focus {
+      color: $concrete;
+      background-color: rgba(1, 1, 1, 0.8);
+    }
+  }
+}
+
+
+.navbar-default .navbar-nav > li > a {
+  color: $clouds;
+
+  &:hover, &:focus {
+    color: $concrete;
+  }
+}
+
+#secondaryTitle {
+  font-size: 5vw;
+}
+
+#mainTitle {
+  font-size: 10vw;
+}
+
+.mainDescription {
+  @media (min-width: 992px) {
+    margin-top: 5vh;
+  }
+  font-size: 2.5vw;
+}
+
+.mainButtons {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 20px;
+  a {
+    color: white;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    //font-family: $paragraph;
+    letter-spacing: 0.3px;
+    //width: 22vw;
+    padding: 15px 0;
+    font-weight: 300;
+    border-radius: 5px;
+    &:hover, &:focus {
+      background: -webkit-linear-gradient(top, $greenSea, $teal);
+      background: -moz-linear-gradient(top, $greenSea, $teal);
+      background: -o-linear-gradient(top, $greenSea, $teal);
+      background: -ms-linear-gradient(top, $greenSea, $teal);
+      background: linear-gradient(top, $greenSea, $teal);
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+
+  background: $emerald;
+  border: $greenSea;
+  font-weight: 300;
+
+  color: white;
+  text-align: center;
+
+  background: -webkit-linear-gradient(top, $emerald, $greenSea);
+  background: -moz-linear-gradient(top, $emerald, $greenSea);
+  background: -o-linear-gradient(top, $emerald, $greenSea);
+  background: -ms-linear-gradient(top, $emerald, $greenSea);
+  background: linear-gradient(top, $emerald, $greenSea);
+
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 0 5px 0 $teal;
+  -moz-box-shadow: 0 5px 0 $teal;
+  box-shadow: 0 5px 0 $teal;
+
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.1);
+}
