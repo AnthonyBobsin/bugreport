@@ -4,6 +4,12 @@
 
 @import "config.scss";
 
+.alert-notice, .alert-alert {
+  background-color: $emerald;
+  text-align: center;
+  color: white;
+}
+
 .gimmeSpace {
   margin-top: 5vh;
 }

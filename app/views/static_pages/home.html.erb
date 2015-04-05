@@ -11,7 +11,11 @@
           <%= link_to "View All Bugs", bugs_path %>
         </div>
         <div class="mainButtons">
-          <%= link_to "Report a Bug", new_bug_path %>
+          <% if user_signed_in? %>
+            <%= link_to "Report a Bug", new_bug_path %>
+          <% else %>
+            <%= link_to "Log In to Report a Bug", new_user_session_path %>
+          <% end %>
         </div>
       </div>
     </div>
