@@ -29,3 +29,7 @@ test:
   username: root
   password: 2bmZU9
   host: localhost
+
+production:
+  <<: *default
+  database: db/production.sqlite3
