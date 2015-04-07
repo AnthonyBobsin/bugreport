@@ -5,10 +5,12 @@
   </div>
   <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
     <div class="bugButton">
-      <% if !bug.is_closed %>
+      <% if !bug.is_closed && user_signed_in? %>
         <%= link_to "Close This Bug", close_bug_path(bug.id), method: :patch %>
-      <% else %>
+      <% elsif user_signed_in? %>
         <p>CLOSED - <%= link_to "Delete", bug_path(bug.id), method: :delete %></p>
+      <% else %>
+        <p>CLOSED</p>
       <% end %>
     </div>
   </div>
