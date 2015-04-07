@@ -15,7 +15,7 @@ development:
   database: bugreport
   pool: 5
   username: root
-  password: ENV['DBPASS']
+  password: 2bmZU9
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -27,7 +27,7 @@ test:
   database: bugreport_test
   pool: 5
   username: root
-  password: ENV['DBPASS']
+  password: 2bmZU9
   host: localhost
 
 production:
