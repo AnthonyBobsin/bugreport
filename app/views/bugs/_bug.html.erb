@@ -8,7 +8,7 @@
       <% if !bug.is_closed %>
         <%= link_to "Close This Bug", close_bug_path(bug.id), method: :patch %>
       <% else %>
-        <p>CLOSED</p>
+        <p>CLOSED - <%= link_to "Delete", bug_path(bug.id), method: :delete %></p>
       <% end %>
     </div>
   </div>

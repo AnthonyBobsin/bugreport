@@ -40,4 +40,11 @@ class BugsControllerTest < ActionController::TestCase
     assert_equal "You successfully closed the bug", flash[:success]
   end
 
+  test "Should destroy bug" do
+    assert_difference 'Bug.count', -1 do
+      delete :destroy, id: @bug.id
+    end
+    assert_redirected_to bugs_path
+  end
+
 end

@@ -33,6 +33,13 @@ class BugsController < ApplicationController
     end
   end
 
+  def destroy
+    @bug = Bug.find(params[:id])
+    @bug.destroy
+    flash[:success] = "You successfully deleted the bug."
+    redirect_to bugs_path
+  end
+
   private
 
   def bug_params
