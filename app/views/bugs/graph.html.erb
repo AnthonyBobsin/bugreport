@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+        <h1 class="text-center">Opened and Closed Bugs</h1>
+        <p class="opened_text">Opened - <span id="opened_bugs"><%= @bugs_open.count %></span></p>
+        <p class="closed_text">Closed - <span id="closed_bugs"><%= @bugs_closed.count %></span></p>
+        <div class="ct-chart ct-perfect-fourth"></div>
+    </div>
+  </div>
+</div>

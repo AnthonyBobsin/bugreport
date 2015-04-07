@@ -9,6 +9,9 @@ Rails.application.routes.draw do
     member do
       patch 'close'
     end
+    collection do
+      get 'graph'
+    end
   end
 
   # You can have the root of your site routed with "root"

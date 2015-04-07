@@ -42,6 +42,11 @@ class BugsController < ApplicationController
     redirect_to bugs_path
   end
 
+  def graph
+    @bugs_closed = Bug.where(is_closed: true)
+    @bugs_open = Bug.where(is_closed: false)
+  end
+
   private
 
   def bug_params

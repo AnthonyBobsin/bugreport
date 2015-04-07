@@ -14,4 +14,5 @@
 //= require jquery-ujs/src/rails
 //= require bootstrap-sass-official/assets/javascripts/bootstrap.min
 //= require turbolinks
+//= require jquery.turbolinks
 //= require_tree .

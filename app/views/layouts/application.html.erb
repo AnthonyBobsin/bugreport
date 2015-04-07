@@ -25,6 +25,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+        <li><%= link_to "All Bugs", bugs_path %></li>
+        <li><%= link_to "Bug Graph", graph_bugs_path %></li>
         <% if user_signed_in? %>
             <li><%= link_to "Report Bug", new_bug_path, class: "switcharoo" %></li>
             <li class="dropdown">
@@ -40,6 +42,8 @@
         <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right hidden-md hidden-lg">
+        <li><%= link_to "All Bugs", bugs_path %></li>
+        <li><%= link_to "Bug Graph", graph_bugs_path %></li>
         <% if user_signed_in? %>
             <li><%= link_to "Report Bug", new_bug_path, class: "switcharoo" %></li>
             <li><%= link_to "Edit Profile", edit_user_registration_path(current_user) %></li>

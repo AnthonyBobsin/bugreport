@@ -20,7 +20,7 @@
   }
 }
 
-.open {
+.closed {
   color: $clouds;
   background: $alizarin;
   border: $pomegranate;
@@ -37,7 +37,7 @@
   border-radius: 5px;
 }
 
-.closed {
+.open {
   color: $clouds;
   background: $emerald;
   border: $greenSea;
@@ -52,4 +52,18 @@
   -khtml-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+.opened_text {
+  font-size: 20px;
+  color: $emerald;
+}
+
+.closed_text {
+  font-size: 20px;
+  color: $alizarin;
+}
+
+#opened_bugs, #closed_bugs {
+  color: black;
 }
