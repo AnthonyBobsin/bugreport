@@ -10,7 +10,7 @@ gem 'devise'
 gem 'will_paginate', '~> 3.0.6'
 gem 'font-awesome-sass'
 gem 'faker'
-# gem 'dynamic_sitemaps'
+# gem 'dynamic_sitemaps', path: "/Users/Azalea/Workspaces/Ruby/Gems/dynamic_sitemaps"
 gem 'mysql2'
 gem 'jquery-turbolinks'
 gem 'bower'
