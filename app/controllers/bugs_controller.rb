@@ -9,7 +9,7 @@ class BugsController < ApplicationController
     @bug.user = current_user
     @bug.is_closed = false
     if @bug.save
-      UserMailer.bug_submit(current_user, @bug).deliver_now
+      # UserMailer.bug_submit(current_user, @bug).deliver_now
       flash[:success] = "You successfully reported the bug"
       redirect_to bugs_path
     else
@@ -26,7 +26,7 @@ class BugsController < ApplicationController
     @bug = Bug.find(params[:id])
     @bug.is_closed = true
     if @bug.save
-      UserMailer.bug_closed(current_user, @bug).deliver_now
+      # UserMailer.bug_closed(current_user, @bug).deliver_now
       flash[:success] = "You successfully closed the bug"
       redirect_to bugs_path
     else
