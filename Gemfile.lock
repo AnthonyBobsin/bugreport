@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/Azalea/Workspaces/Ruby/Gems/chartist-rails
+  specs:
+    chartist-rails (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -229,6 +234,7 @@ PLATFORMS
 DEPENDENCIES
   bower
   byebug
+  chartist-rails!
   devise
   faker
   font-awesome-sass

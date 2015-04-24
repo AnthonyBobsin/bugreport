@@ -14,6 +14,7 @@ gem 'faker'
 gem 'mysql2'
 gem 'jquery-turbolinks'
 gem 'bower'
+gem 'chartist-rails', :path => '/Users/Azalea/Workspaces/Ruby/Gems/chartist-rails'
 
 group :development, :test do
   gem 'byebug'

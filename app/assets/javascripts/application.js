@@ -13,6 +13,7 @@
 //= require jquery/dist/jquery.min
 //= require jquery-ujs/src/rails
 //= require bootstrap-sass-official/assets/javascripts/bootstrap.min
+//= require chartist
 //= require turbolinks
 //= require jquery.turbolinks
 //= require_tree .
